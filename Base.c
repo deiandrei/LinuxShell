@@ -215,7 +215,7 @@ int function_mkdir(char** args) {
 
   char temp[50];
   strcpy(temp, args[1]);
-  if(mkdir(temo, 0777) == -1)
+  if(mkdir(temp, 0777) == -1)
     printf("Error\n");
   else
     printf("Directory created\n");
