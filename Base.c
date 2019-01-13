@@ -2,8 +2,8 @@
 //  Base.c
 //  LinuxShell
 //
-//  Created by the team on 09/01/2019.
-//  Copyright © 2019 Andrei Mazilu, Robert-Valentin Avramescu and Radu Onetiu. All rights reserved.
+//  Created by Andrei on 09/01/2019.
+//  Copyright © 2019 Andrei. All rights reserved.
 //
 
 #include "Base.h"
@@ -212,7 +212,14 @@ int function_cp(char** args) {
 }
 
 int function_mkdir(char** args) {
-    return 1;
+
+  char temp[50];
+  strcpy(temp, args[1]);
+  if(mkdir(temo, 0777) == -1)
+    printf("Error\n");
+  else
+    printf("Directory created\n");
+  return 1;
 }
 
 int function_rm(char** args) {
