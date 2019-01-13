@@ -99,7 +99,6 @@ int function_sysinfo(char** args) {
     printf(" release = %s;\n", u_name.release);
     printf(" version = %s;\n", u_name.version);
     printf(" machine = %s;\n", u_name.machine);
-    
     return 1;
 }
 
